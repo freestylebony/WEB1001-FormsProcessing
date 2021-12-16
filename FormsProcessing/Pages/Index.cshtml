@@ -4,24 +4,31 @@
     ViewData["Title"] = "Home page";
 }
 
+
+
 <div class="text-center">
-   
+
     <form method="post">
         <fieldset>
             <legend>Add Customer</legend>
             <div>
                 <label for="Number">Number:</label>
-                <input type="number" name="Number" value="" />
+                <input type="number" name="Number" />
             </div>
             <div>
                 <label for="Date">Date:</label>
-                <input type="datetime" name="Date" value="" />
+                <input type="datetime" name="Date" />
             </div>
-           
+
             <div>
                 <label>&nbsp;</label>
                 <input type="submit" value="Submit" class="submit" />
             </div>
         </fieldset>
     </form>
+
+    <p> The number is @Model.Number</p>
+    <p> The Date Time is is @Model.Date</p>
+    
+
 </div>
